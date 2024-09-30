@@ -12,9 +12,12 @@ namespace adatbesinheritance
 {
     public partial class Form1 : Form
     {
+        databasehandler db;
         public Form1()
         {
             InitializeComponent();
+            db = new databasehandler();
+            db.ReadAll();
         }
     }
 }
